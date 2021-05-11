@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_marginEnd="12dp"
     android:layout_marginTop="6dp"
     android:layout_marginBottom="6dp"
-    android:layout_marginStart="12dp">
+    android:layout_marginStart="12dp"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="8dp"
+    app:contentPadding="16dp"
+    android:clickable="true"
+    android:checkable="true"
+    android:id="@+id/card_main_text">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/black"
         android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. "/>
-</FrameLayout>
+
+</com.google.android.material.card.MaterialCardView>
