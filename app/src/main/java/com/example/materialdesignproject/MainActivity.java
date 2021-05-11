@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Toolbar toolbarMain = findViewById(R.id.toolbar_main);
-        setSupportActionBar(toolbarMain);
+        setSupportActionBar();
 
     }
 }
