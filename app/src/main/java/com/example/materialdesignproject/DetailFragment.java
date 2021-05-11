@@ -3,6 +3,7 @@ package com.example.materialdesignproject;
 import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -16,6 +17,12 @@ import androidx.fragment.app.Fragment;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 
 public class DetailFragment extends Fragment {
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setHasOptionsMenu(true);
+    }
 
     @Nullable
     @Override
@@ -38,5 +45,14 @@ public class DetailFragment extends Fragment {
         CollapsingToolbarLayout collapsingToolbarLayout = view.findViewById(R.id.collapsingToolbarLayout_detail);
         collapsingToolbarLayout.setExpandedTitleColor(ContextCompat.getColor(getContext(), android.R.color.transparent));
         collapsingToolbarLayout.setTitle("Lorem Ipsum");
+
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId() == android.R.id.home){
+            getActivity().onBackPressed();
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
