@@ -12,7 +12,7 @@
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar_main"
         app:titleTextColor="@android:color/white"
-        app:layout_scrollFlags="scroll"
+        app:layout_scrollFlags="scroll|enterAlways"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 </com.google.android.material.appbar.AppBarLayout>
