@@ -37,5 +37,6 @@ public class DetailFragment extends Fragment {
 
         CollapsingToolbarLayout collapsingToolbarLayout = view.findViewById(R.id.collapsingToolbarLayout_detail);
         collapsingToolbarLayout.setExpandedTitleColor(ContextCompat.getColor(getContext(), android.R.color.transparent));
+        collapsingToolbarLayout.setTitle("Lorem Ipsum");
     }
 }
