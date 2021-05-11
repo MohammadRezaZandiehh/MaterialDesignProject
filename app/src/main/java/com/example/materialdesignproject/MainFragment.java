@@ -27,11 +27,11 @@ public class MainFragment extends Fragment {
         MaterialCardView materialCardView = view.findViewById(R.id.card_main_text);
         materialCardView.setChecked(true);
 
-        materialCardView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                materialCardView.setChecked(!materialCardView.isChecked());
-            }
-        });
+//        materialCardView.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                materialCardView.setChecked(!materialCardView.isChecked());
+//            }
+//        });
     }
 }
