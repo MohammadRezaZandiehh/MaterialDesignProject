@@ -6,6 +6,8 @@ import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -16,5 +18,9 @@ public class MainActivity extends AppCompatActivity {
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.frame_main_fragmentContainer, new MainFragment());
         transaction.commit();
+
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView_main);
+        bottomNavigationView.setSelectedItemId(R.id.menuItemHome);
+
     }
 }
