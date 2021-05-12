@@ -6,6 +6,7 @@
     android:background="@color/white">
 
     <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar_detail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -66,5 +67,15 @@ On the other hand, we denounce with righteous indignation and dislike men who ar
                 android:textColor="@color/black" />
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="mini"
+        app:layout_anchor="@id/appBar_detail"
+        app:layout_anchorGravity="bottom|end"
+        app:useCompatPadding="true"
+        app:srcCompat="@drawable/ic_add_white_24dp"
+        app:tint="@color/white"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
