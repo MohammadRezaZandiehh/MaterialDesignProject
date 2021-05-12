@@ -7,9 +7,8 @@
     tools:context=".MainActivity">
 
 
-    <fragment
+    <FrameLayout
         android:id="@+id/frame_main_fragmentContainer"
-        android:name="com.example.materialdesignproject.MainFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
