@@ -6,6 +6,7 @@
         android:title="Recents" />
     <item
         android:id="@+id/menuItemHome"
+        android:checked="true"
         android:icon="@drawable/ic_home_24px"
         android:title="Home" />
     <item
